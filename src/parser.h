@@ -41,7 +41,7 @@ struct cmark_parser {
   cmark_strbuf curline;
   /* See the documentation for cmark_parser_get_last_line_length() in cmark.h */
   bufsize_t last_line_length;
-  /* FIXME: not sure about the difference with curline */
+  /* Data being fed into the parser; may contain partial lines */
   cmark_strbuf linebuf;
   /* Options set by the user, see the Options section in cmark.h */
   int options;
